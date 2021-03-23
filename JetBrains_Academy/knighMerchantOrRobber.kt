@@ -1,17 +1,9 @@
 fun main() {
-    var firstAnswer: Boolean = readLine()!!.toBoolean()
-    var secondAnswer: Boolean = readLine()!!.toBoolean()
-    var confession: Boolean = readLine()!!.toBoolean()
+    var firstAnswer: Boolean = readLine().toBoolean()
+    var secondAnswer: Boolean = readLine().toBoolean()
+    var confession: Boolean = readLine().toBoolean()
     
-    if (firstAnswer && secondAnswer && !confession) {
-        print("true")
-    } else if (firstAnswer && !secondAnswer && !confession) {
-        print("false")
-    } else if (!firstAnswer && !secondAnswer && confession) {
-        print("false")
-    } else {
-        print("true")
-    }
+    println(!(firstAnswer xor secondAnswer) and !confession)
 
 }
 // Failed test #5 of 6. Wrong answer, have yet to be fixed.
@@ -46,4 +38,8 @@ false
 true
 Sample Output 3:
 
-false*/
+false
+
+Hint
+
+You can use XOR to check that the answers are different.*/

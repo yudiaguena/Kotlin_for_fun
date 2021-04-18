@@ -1,3 +1,4 @@
+/*ANOTAÇÃO 
 // can use to check
 
 //char range
@@ -15,3 +16,6 @@ val range = a..b - 1
 
 val range = 100..200
 println(300 in range) // false
+
+
+*/ 
